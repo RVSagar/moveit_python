@@ -73,7 +73,8 @@ class MoveGroupInterface(object):
                           "planning_scene_diff",
                           "planning_time",
                           "plan_only",
-                          "start_state")
+                          "start_state",
+                          "num_attempts")
         for arg in kwargs.keys():
             if not arg in supported_args:
                 rospy.loginfo("moveToJointPosition: unsupported argument: %s",
